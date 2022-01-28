@@ -1,0 +1,30 @@
+{
+    "contactData": {
+        "firstName": "Production Server",
+        "tags": [
+            "oi"
+        ],
+        "list": "1",
+        "email": "productionserver@gmail.com"
+    },
+    "historyAnswersData": {
+        "contactId": "oi",
+        "list": "1",
+        "tags": [
+            {
+                "_id": "60c5727d6c89561564a9db90",
+                "crmApiId": "61e87bc85eef1575ecfcea72",
+                "title": "Empregado",
+                "crmId": "8",
+                "__v": 0
+            }
+        ],
+        "api": "mautic",
+        "origin": "fc",
+        "quizId": "oi"
+    },
+    "quizData": {
+        "crmApiId": "61e87bc85eef1575ecfcea72",
+        "allTags": []
+    }
+}

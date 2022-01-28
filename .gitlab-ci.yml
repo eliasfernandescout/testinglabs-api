@@ -1,0 +1,21 @@
+# stages:
+#   - rootServerCrochet
+
+# rootServerCrochet:
+#  stage: rootServerCrochet
+#  only:
+#    - master
+#  before_script:
+#    - 'which ssh-agent || (apt-get update -y && apt-get install openssh-client -y)'
+#    - mkdir -p ~/.ssh
+#    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config' 
+#    - echo "$PRIVATE_KEY" | tr -d '\r' > ~/.ssh/id_rsa
+#    - chmod 600 ~/.ssh/id_rsa
+#    - eval "$(ssh-agent -s)"
+#    - ssh-add ~/.ssh/id_rsa
+#    - ssh-keyscan -H $KKKKKKKKKKKKKKKIP_SERVER >> ~/.ssh/known_hosts
+#  script:
+#    - echo "==== START DEPLOY ===="
+#    - ssh root@$KKKKKKKKKKKKIP_SERVER "source ~/.nvm/nvm.sh; cd jcrochet-api; git pull; yarn install; sudo rm -rf dist; yarn build"
+
+ 

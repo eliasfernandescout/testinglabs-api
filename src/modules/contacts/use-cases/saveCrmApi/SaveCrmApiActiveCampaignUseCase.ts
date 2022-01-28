@@ -1,0 +1,3 @@
+class SaveCrmApiUseCase {}
+
+export { SaveCrmApiUseCase };
