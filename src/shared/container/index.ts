@@ -13,26 +13,26 @@ import { IQuizzesRepository } from '../../modules/quizzes/repositories/IQuizzesR
 import { IQuizzesUrlsRepository } from '../../modules/quizzes/repositories/IQuizzesUrlsRepository';
 
 container.registerSingleton<IContactsRepository>(
-    'ContactsRepository',
-    ContactsRepository,
+  'ContactsRepository',
+  ContactsRepository,
 );
 
 container.registerSingleton<IAnswersHistoryRepository>(
-    'AnswersHistoryRepository',
-    AnswersHistoryRepository,
+  'AnswersHistoryRepository',
+  AnswersHistoryRepository,
 );
 
 container.registerSingleton<IQuizzesRepository>(
-    'QuizzesRepository',
-    QuizzesRepository,
+  'QuizzesRepository',
+  QuizzesRepository,
 );
 
 container.registerSingleton<IQuizzesUrlsRepository>(
-    'QuizzesUrlsRepository',
-    QuizzesUrlRepository,
+  'QuizzesUrlsRepository',
+  QuizzesUrlRepository,
 );
 
 container.registerSingleton<ICrmApiRepository>(
-    'CrmApiRepository',
-    CrmApiRepository,
+  'CrmApiRepository',
+  CrmApiRepository,
 );

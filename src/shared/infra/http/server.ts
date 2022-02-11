@@ -11,9 +11,9 @@ dotenv.config();
 const app = express();
 
 app.use(
-    cors({
-        origin: '*',
-    }),
+  cors({
+    origin: '*',
+  }),
 );
 
 // origin: ['dominio.com.br, 'dominio2.com.br]
@@ -22,5 +22,5 @@ app.use(express.json());
 app.use(router);
 
 app.listen(5002, `${process.env.SERVER_HOST}`, () => {
-    console.log('🟠 Server Started on Port 5002');
+  console.log('🟠 Server Started on Port 5002');
 });

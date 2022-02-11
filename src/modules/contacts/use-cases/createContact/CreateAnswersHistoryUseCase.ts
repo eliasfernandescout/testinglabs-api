@@ -6,21 +6,21 @@ import { IAnswersHistoryRepository } from '../../repositories/IAnswersHistoryRep
 
 @injectable()
 class CreateAnswersHistoryUseCase {
-    constructor(
-        @inject('AnswersHistoryRepository')
-        private answersHistoryRepository: IAnswersHistoryRepository,
-    ) {}
+  constructor(
+    @inject('AnswersHistoryRepository')
+    private answersHistoryRepository: IAnswersHistoryRepository,
+  ) {}
 
-    execute(
-        contactId: string | undefined,
-        answersHistoryData: ICreateAnswersHistoryDTO,
-    ): AnswerHistory {
-        const contact = this.answersHistoryRepository.create(
-            contactId,
-            answersHistoryData,
-        );
-        return contact;
-    }
+  execute(
+    contactId: string | undefined,
+    answersHistoryData: ICreateAnswersHistoryDTO,
+  ): AnswerHistory {
+    const contact = this.answersHistoryRepository.create(
+      contactId,
+      answersHistoryData,
+    );
+    return contact;
+  }
 }
 
 export { CreateAnswersHistoryUseCase };

@@ -1,7 +1,7 @@
 interface ICreateQuizzesUrlsDTO {
-    url: string;
-    hostname: string;
-    quizId: string;
+  url: string;
+  hostname: string;
+  quizId: string;
 }
 
 export { ICreateQuizzesUrlsDTO };

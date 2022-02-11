@@ -5,15 +5,15 @@ import { IQuizzesUrlsRepository } from '../../repositories/IQuizzesUrlsRepositor
 
 @injectable()
 class ListQuizzesUrlsUseCase {
-    constructor(
-        @inject('QuizzesUrlsRepository')
-        private quizUrlRepository: IQuizzesUrlsRepository,
-    ) {}
+  constructor(
+    @inject('QuizzesUrlsRepository')
+    private quizUrlRepository: IQuizzesUrlsRepository,
+  ) {}
 
-    async execute(host: string): Promise<QuizzesUrls[] | null> {
-        const quizzesUrls = await this.quizUrlRepository.list(host);
-        return quizzesUrls;
-    }
+  async execute(host: string): Promise<QuizzesUrls[] | null> {
+    const quizzesUrls = await this.quizUrlRepository.list(host);
+    return quizzesUrls;
+  }
 }
 
 export { ListQuizzesUrlsUseCase };
